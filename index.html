@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhạc cá nhân | Xem bài hát, album, MV đang hot nhất hiện tại</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/emoji/48/000000/musical-notes-emoji.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/font/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/css/base.css">
+    <link rel="stylesheet" href="./Assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        
+        <div class="app__slibar">
+            <div class="slibar__logo">
+                <a href="" class="slibar__logo-main">
+                    <img src="./Assets/img/main-logo.svg" alt="logo" class="slibar__logo-main-1">
+                </a>
+            </div>
+            <div class="slibar">
+                <ul class="slibar__menu-list">
+                    <li class="slibar__menu-item">
+                        <a href="#" class="slibar__menu-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-user"></i>
+                            Cá nhân
+                        </a>
+                        <i class="fa-regular fa-circle-play circle-play-icon"></i>
+                    </li>
+                    <li class="slibar__menu-item">
+                        <a href="" class="slibar__menu-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-compact-disc"></i>
+                            Khám phá
+                        </a>
+                    </li>
+                    <li class="slibar__menu-item">
+                        <a href="" class="slibar__menu-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-music"></i>
+                            #Zingchat
+                        </a>
+                        <i class="fa-regular fa-circle-play circle-play-icon"></i>
+                    </li>
+                    <li class="slibar__menu-item">
+                        <a href="" class="slibar__menu-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-radio"></i>
+                            Radio
+                        </a>
+                        <i class="fa-regular fa-circle-play circle-play-icon"></i>
+                    </li>
+                    <li id="btnPersion" class="slibar__menu-item " onclick="click">
+                        <a href="" class="slibar__menu-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-poo"></i>
+                            Theo dõi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slibar__subnav">
+                <ul class="slibar__subnav-list">
+                    <li class="slibar__subnav-item">
+                        <a href="" class="slibar__subnav-item-link">
+                            <i class="slibar__menu-icon fa-brands fa-discord"></i>
+                            Nhạc mới
+                        </a>
+                        <i class="fa-regular fa-circle-play circle-play-icon"></i>
+                    </li>
+                    <li class="slibar__subnav-item">
+                        <a href="" class="slibar__subnav-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-bomb"></i>
+                            Thể loại
+                        </a>
+                    </li>
+                    <li class="slibar__subnav-item">
+                        <a href="" class="slibar__subnav-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-star"></i>
+                            Top 100
+                        </a>
+                    </li>
+                    <li class="slibar__subnav-item">
+                        <a href="" class="slibar__subnav-item-link">
+                            <i class="slibar__menu-icon fa-solid fa-video"></i>
+                            MV
+                        </a>
+                    </li>
+                </ul>
+                <div class="advertisement">
+                     <p class="advertisement__tittle">
+                        Nghe nhạc không quảng cáo cùng kho nhạc VIP
+                     </p>
+                     <a href="" class="advertisement__updatevip">
+                        Nâng cấp VIP
+                     </a>
+                </div>
+                <ul class="slibar__subnav-library-list">
+                    <li class="slibar__subnav-library-item">
+                        Thư viện
+                        <i class="fa-regular fa-pen-to-square fa-pen-to-square-type"></i>
+                    </li>
+                    <li class="slibar__subnav-library-item">
+                        <a href="" class="slibar__subnav-library-item-link">
+                            <i class="slibar__subnav-icon ">
+                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-song.cf0cb0b4.svg" alt="">
+                            </i>
+                            Bài hát
+                        </a>
+                        <i class="fa-regular fa-circle-play circle-play-icon"></i>
+                    </li>
+                    <li class="slibar__subnav-library-item">
+                        <a href="" class="slibar__subnav-library-item-link">
+                            <i class="slibar__subnav-icon">
+                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-playlist.7e92a5f0.svg" alt="">
+                            </i>
+                            Play list
+                        </a>
+                    </li>
+                    <li class="slibar__subnav-library-item">
+                        <a href="" class="slibar__subnav-library-item-link">
+                            <i class="slibar__subnav-icon">
+                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.0.13/static/media/my-history.374cb625.svg" alt="">
+                            </i>
+                            Gần đây
+                        </a>
+                    </li>
+                    <li class="slibar__subnav-library-item">
+                        <a href="" class="slibar__subnav-library-item-link">
+                            Giai điệu tình yêu
+                        </a>
+                    </li>
+                    <li class="slibar__subnav-library-item">
+                        <a href="" class="slibar__subnav-library-item-link">
+                            Nhạc của Quý ròm
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sliber__create">
+                <p class="sliber__create-list">
+                    <i class="slibar__subnav-icon fa-solid fa-plus"></i>
+                    Tạo play list mới
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="header">
+            <div class="header__search">
+                <i class="header__search-icon header__search-icon-opacity fa-solid fa-left-long"></i>
+                <i class="header__search-icon fa-solid fa-right-long"></i>
+                <div class="header__search-condition">
+                    <input class="header__search-textbox" type="text" placeholder="Nhập tên bài hát, nghệ sĩ, hoặc MV...">
+                    <div class="header__search-condition-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <i class="fa-solid fa-shirt"></i>
+                    </li>
+                    <li class="header__nav-item">
+                        <i class="fa-solid fa-upload"></i>
+                    </li>
+                    <li class="header__nav-item">
+                        <i class="fa-solid fa-gear"></i>
+                    </li>
+                    <li class="header__nav-item">
+                        <img class="header__nav-item-img" src="./Assets/img/covic.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
+        <div class="historry">
+            <div class="historry__header">
+                <div class="historry__header-text">
+                    <p class="historry__header-text-playlist historry__header-text-playlist-stype">
+                        Danh sách phát
+                    </p>
+                    <p class="historry__header-text-playlist">
+                        Nghe gần đây
+                    </p>
+                </div>
+                <div class="historry__header-oclock">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="historry__header-menu">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+
+            <div class="historry__song">
+                <div class="historry__song-img">
+                    <img src="./Assets/img/gai.jpg" alt="" class="historry__song-img-photo">
+                </div>
+                <div class="historry__song-title">
+                    <p class="historry__song-title-name">
+                        Tiếng pháo tiễn người
+                    </p>
+                    <p class="historry__song-title-tacgia">
+                        Hùng Quân
+                    </p>
+                </div>
+                <div class="historry__song-font">
+                    <i class="fa-regular fa-heart historry__song-font-icon"></i>
+                    <i class="fa-solid fa-ellipsis historry__song-font-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cá nhân -->
+        <div class="persional">
+            <div class="header">
+                <div class="header__search">
+                    <i class="header__search-icon header__search-icon-opacity fa-solid fa-left-long"></i>
+                    <i class="header__search-icon fa-solid fa-right-long"></i>
+                    <div class="header__search-condition">
+                        <input class="header__search-textbox" type="text" placeholder="Nhập tên bài hát, nghệ sĩ, hoặc MV...">
+                        <div class="header__search-condition-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <i class="fa-solid fa-shirt"></i>
+                        </li>
+                        <li class="header__nav-item">
+                            <i class="fa-solid fa-upload"></i>
+                        </li>
+                        <li class="header__nav-item">
+                            <i class="fa-solid fa-gear"></i>
+                        </li>
+                        <li class="header__nav-item">
+                            <img class="header__nav-item-img" src="./Assets/img/covic.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="persional__header">
+                <div class="persional__header-user">
+                    <div class="persional__header-user-face">
+                        <div class="persional__header-user-face-img">
+                            <img class="persional__header-user-face-img-avatar" src="./Assets/img/covic.jpg" alt="">
+                        </div>
+                        <h1 class="persional__header-user-face-title">
+                            Trần Như Quý
+                        </h1>
+                    </div>
+                    <div class="persional__header-user-vip">
+                        <ul class="persional__header-user-vip-list">
+                            <li class="persional__header-user-vip-item">
+                                <a href="" class="persional__header-user-vip-link vip--color1">
+                                    Mua vip ngay
+                                </a>
+                            </li>
+                            <li class="persional__header-user-vip-item">
+                                <a href="" class="persional__header-user-vip-link vip--color2">
+                                    Nhập code vip
+                                </a>
+                            </li>
+                            <li class="persional__header-user-vip-item">
+                                <a href="" class="persional__header-user-vip-link vip--color2">
+                                    ...
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="persional__header-menu">
+                    <ul class="persional__header-menu-list">
+                        <li class="persional__header-menu-item persional__header-menu-item-bg">Tổng quan</li>
+                        <li class="persional__header-menu-item">bài hát</li>
+                        <li class="persional__header-menu-item">Playlist</li>
+                        <li class="persional__header-menu-item">Album</li>
+                        <li class="persional__header-menu-item">MV</li>
+                        <li class="persional__header-menu-item">Nghệ sĩ</li>
+                        <li class="persional__header-menu-item">Tải lên</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="persional__content">
+                <div class="persional__content-song">
+                    <div class="persional__content-song-upload">
+                        <a href="" class="persional__content-song-upload-title">
+                            Bài hát
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="persional__content-song-upload-right">
+                            <div class="persional__content-song-upload-icon">
+                                <p class="persional__content-song-upload-icon-p">
+                                    <i class="fa-solid fa-upload"></i>
+                                    Tải lên
+                                </p>
+                            </div>
+                            <div class="persional__content-song-upload-icon persional__content-song-upload-icon1">
+                                <p class="persional__content-song-upload-icon-p">
+                                    <i class="fa-solid fa-play"></i>
+                                    Phát tất cả
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="persional__content-song-item">
+                        <div class="persional__content-song-item-slide">
+                            <img class="gai" src="./Assets/img/gai.jpg" alt="">
+                        </div>
+                        <div class="persional__content-song-item-detail">
+                            <div class="persional__content-song-item-detail-bao">
+                                <div class="persional__content-song-item-detail-item">
+                                    <div class="persional__content-song-item-detail-item-info">
+                                        <img src="" alt="" class="persional__content-song-item-detail-item-logo">
+                                        <div class="persional__content-song-item-detail-item-title">
+                                            <div class="persional__content-song-item-detail-item-title-name">
+                                                Tên bài hát
+                                            </div>
+                                            <div class="persional__content-song-item-detail-item-title-author">
+                                                <a href="" class="persional__content-song-item-detail-item-title-author-link">Keyo</a>, 
+                                                <a href="" class="persional__content-song-item-detail-item-title-author-link">Quý</a>, 
+                                                <a href="" class="persional__content-song-item-detail-item-title-author-link">Quý</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="persional__content-song-item-detail-item-time">
+                                        <p class="persional__content-song-item-detail-item-time-p">
+                                            04:54
+                                        </p>
+                                    </div>
+                                    <div class="persional__content-song-item-detail-icon">
+                                        <div class="persional__content-song-item-detail-icon-type persional__content-song-item-detail-icon-void">
+                                            <i class="fa-sharp fa-solid fa-microphone"></i>
+                                        </div>
+                                        <div class="persional__content-song-item-detail-icon-type persional__content-song-item-detail-icon-heart">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </div>
+                                        <div class="persional__content-song-item-detail-icon-type persional__content-song-item-detail-icon-menu">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </div>
+                                    </div>
+    
+                                    <audio id="audio" src=""></audio>
+                            </div>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                <div class="persional__content-playlist">
+                    <div class="persional__content-song-upload">
+                        <a href="" class="persional__content-song-upload-title">
+                            Playlist
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="persional__content-playlist-list">
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-addplaylist">
+                                <i class=" persional__content-playlist-item-addplaylist-icon fa-solid fa-plus"></i>
+                                <p class="persional__content-playlist-item-addplaylist-p">
+                                    Tạo playlist mới
+                                </p>
+                            </div>
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            <p class="persional__content-playlist-item-p">Zing MP3</p>
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            <p class="persional__content-playlist-item-p">Zing MP3</p>
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            <p class="persional__content-playlist-item-p">Zing MP3</p>
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            <p class="persional__content-playlist-item-p">Zing MP3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="persional__content-playlist">
+                    <div class="persional__content-song-upload">
+                        <a href="" class="persional__content-song-upload-title">
+                            Album
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="persional__content-playlist-list">
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img ">
+
+                            </div>
+                            <a href="" class="persional__content-playlist-item-tilte">V-Pop: The A-List</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="persional__content-playlist">
+                    <div class="persional__content-song-upload">
+                        <a href="" class="persional__content-song-upload-title">
+                            MV
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="persional__content-playlist-list">
+                        <div class="persional__content-MV-item">
+                            <div class="persional__content-MV-item-img ">
+
+                            </div>
+                            <div class="persional__content-MV-item-info">
+                                <div class="persional__content-MV-item-info-logo">
+                                    <img class="persional__content-MV-item-info-logo-img" src="./Assets/img/gai.jpg" alt="">
+                                </div>
+                                <div class="persional__content-MV-item-info-detail">
+                                    <p class="persional__content-MV-item-info-name">
+                                        Một bước yêu vạn dặm đau
+                                    </p>
+                                    <a href="" class="persional__content-MV-item-tilte">
+                                        V-Pop: The A-List
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-MV-item">
+                            <div class="persional__content-MV-item-img ">
+
+                            </div>
+                            <div class="persional__content-MV-item-info">
+                                <div class="persional__content-MV-item-info-logo">
+                                    <img class="persional__content-MV-item-info-logo-img" src="./Assets/img/gai.jpg" alt="">
+                                </div>
+                                <div class="persional__content-MV-item-info-detail">
+                                    <p class="persional__content-MV-item-info-name">
+                                        Một bước yêu vạn dặm đau
+                                    </p>
+                                    <a href="" class="persional__content-MV-item-tilte">
+                                        V-Pop: The A-List
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-MV-item">
+                            <div class="persional__content-MV-item-img ">
+
+                            </div>
+                            <div class="persional__content-MV-item-info">
+                                <div class="persional__content-MV-item-info-logo">
+                                    <img class="persional__content-MV-item-info-logo-img" src="./Assets/img/gai.jpg" alt="">
+                                </div>
+                                <div class="persional__content-MV-item-info-detail">
+                                    <p class="persional__content-MV-item-info-name">
+                                        Một bước yêu vạn dặm đau
+                                    </p>
+                                    <a href="" class="persional__content-MV-item-tilte">
+                                        V-Pop: The A-List
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="persional__content-playlist">
+                    <div class="persional__content-song-upload">
+                        <a href="" class="persional__content-song-upload-title">
+                            Nghệ sĩ
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="persional__content-playlist-list persional__content-playlist-list-type">
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img persional__content-playlist-item-img-artist ">
+
+                            </div>
+                            <div class="persional__content-playlist-item-info">
+                                <p href="" class="persional__content-artist-item-tilte">Binz</p>
+                                <p class="persional__content-artist-item-info-folow">
+                                    265k quan tâm 
+                                </p>
+                                <div class="persional__content-artist-item-info-btnfolow">
+                                    <p class="persional__content-artist-item-info-btnfolow-p">
+                                        <i class="fa-solid fa-check"></i>
+                                        Đã quan tâm 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img persional__content-playlist-item-img-artist ">
+
+                            </div>
+                            <div class="persional__content-playlist-item-info">
+                                <p href="" class="persional__content-artist-item-tilte">Binz</p>
+                                <p class="persional__content-artist-item-info-folow">
+                                    265k quan tâm 
+                                </p>
+                                <div class="persional__content-artist-item-info-btnfolow">
+                                    <p class="persional__content-artist-item-info-btnfolow-p">
+                                        <i class="fa-solid fa-check"></i>
+                                        Đã quan tâm 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img persional__content-playlist-item-img-artist ">
+
+                            </div>
+                            <div class="persional__content-playlist-item-info">
+                                <p href="" class="persional__content-artist-item-tilte">Binz</p>
+                                <p class="persional__content-artist-item-info-folow">
+                                    265k quan tâm 
+                                </p>
+                                <div class="persional__content-artist-item-info-btnfolow">
+                                    <p class="persional__content-artist-item-info-btnfolow-p">
+                                        <i class="fa-solid fa-check"></i>
+                                        Đã quan tâm 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img persional__content-playlist-item-img-artist ">
+
+                            </div>
+                            <div class="persional__content-playlist-item-info">
+                                <p href="" class="persional__content-artist-item-tilte">Binz</p>
+                                <p class="persional__content-artist-item-info-folow">
+                                    265k quan tâm 
+                                </p>
+                                <div class="persional__content-artist-item-info-btnfolow">
+                                    <p class="persional__content-artist-item-info-btnfolow-p">
+                                        <i class="fa-solid fa-check"></i>
+                                        Đã quan tâm 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="persional__content-playlist-item">
+                            <div class="persional__content-playlist-item-img persional__content-playlist-item-img-artist ">
+
+                            </div>
+                            <div class="persional__content-playlist-item-info">
+                                <p href="" class="persional__content-artist-item-tilte">Binz</p>
+                                <p class="persional__content-artist-item-info-folow">
+                                    265k quan tâm 
+                                </p>
+                                <div class="persional__content-artist-item-info-btnfolow">
+                                    <p class="persional__content-artist-item-info-btnfolow-p">
+                                        <i class="fa-solid fa-check"></i>
+                                        Đã quan tâm 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- TRình phát nhạc -->
+        <div class="player">
+            <div class="player__control-left">
+                <div class="player__control-left-photo">
+                    <img src="" alt="" class="player__control-left-photo-img">
+                </div>
+                <div class="player__control-left-content">
+                    <p class="player__control-left-content-name">
+                        Tòng phu
+                    </p>
+                    <p class="player__control-left-content-tacgia">
+                        Keyo
+                    </p>
+                </div>
+                <div class="player__control-left-right">
+                    <div class="player__control-left-right-tim">
+                        <i class="fa-solid fa-heart "></i>
+                    </div>
+                    <div class="player__control-left-right-menu">
+                        <i class="fa-solid fa-ellipsis "></i>
+                    </div>
+                </div>
+            </div>
+            <div class="player__control-bar">
+                <div class="player__control-bar-option">
+                        <div class="btn btn-repeat">
+                          <i class="fas fa-redo icon"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                          <i class="fas fa-step-backward icon"></i>
+                        </div>
+                        <div class="btn btn-toggle-play btn-boder">
+                          <i class="fas fa-pause icon-pause icon"></i>
+                          <i class="fas fa-play icon-play playing icon"></i>
+                        </div>
+                        <div class="btn btn-next icon">
+                          <i class="fas fa-step-forward icon"></i>
+                        </div>
+                        <div class="btn btn-random">
+                          <i class="fas fa-random icon"></i>
+                        </div>
+                </div>
+                <div class="player__control-bar-thanhchay">
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                </div>
+            </div>
+            <div class="player__control-right">
+                <div class="player__control-right-button">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div class="player__control-right-button">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <div class="player__control-right-button ">
+                    <i class="fa-solid fa-volume-off"></i>
+                    <input id="progress_volum" class="progress_volum" type="range" value="0" step="1" min="0" max="100">
+                </div>
+                <div class="player__control-right-button">
+                </div>
+                <div class="player__control-right-button">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+            </div>
+
+            <audio src="" class="audiocurent"></audio>
+        </div>
+    </div>
+
+    <script src="./Assets/js/main.js"></script>
+</body>
+</html>
+
+

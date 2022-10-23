@@ -1,0 +1,33 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ccc;
+    --layout-color: #170f23;
+    --slibar-color : #2a213a;
+    --pink-color : #ed2b91;
+    --purple-primary: #7200a1;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.content__grid {
+    background-color: var(--layout-color);
+    position: absolute;
+    margin-top: 70px;
+    flex: 1;
+    top: 0;
+    left: 240px;
+    right: 300px;
+    /* width: 1363px; */
+    height: 100vh;
+    padding: 0 4vw 0;
+}
